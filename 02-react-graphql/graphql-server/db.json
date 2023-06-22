@@ -1,0 +1,27 @@
+{
+    "persons": [
+        {
+            "id": "assqweqwe",
+            "firstName": "Brian",
+            "lastName": "Ochoa",
+            "phone": "3310",
+            "street": "Apolonio M. Aviles",
+            "city": "Guadalajara"
+        },
+        {
+            "id": "assqwevzxcvzx",
+            "firstName": "Alejandro",
+            "lastName": "Ochoa",
+            "phone": "3310",
+            "street": "Apolonio M. Aviles",
+            "city": "Guadalajara"
+        },
+        {
+            "id": "assqwasvgczx",
+            "firstName": "Pedro",
+            "lastName": "Ochoa",
+            "street": "Apolonio M. Aviles",
+            "city": "Guadalajara"
+        }
+    ]
+}
