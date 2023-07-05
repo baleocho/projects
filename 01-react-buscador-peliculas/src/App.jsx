@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './App.css'
 import { Movies } from "./components/movies"
 import { useMovies } from "./hooks/useMovies"
+import TodoAppFuntional from "./TodoAppFuntional";
 
 const formStyle = { display: "flex", justifyContent: "center", alignItems: "center" }
 const inputStyle = { width: "100%", marginRight: "0" }
@@ -61,6 +62,11 @@ function App() {
       <main className='main'>
         <Movies movies={movies} />
       </main>
+
+
+
+      <TodoAppFuntional/>
+
     </div>
   )
 }
