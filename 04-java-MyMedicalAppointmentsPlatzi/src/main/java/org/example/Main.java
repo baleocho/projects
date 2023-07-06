@@ -1,12 +1,23 @@
 package org.example;
+import java.util.Date;
+
 import static org.example.UIMenu.*;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("------------CREATING AND USING A DOCTOR OBJECT---------------");
         Doctor myDoctor = new Doctor("Dr. Gonzalez", "Pediatra");
+        myDoctor.addAvailableAppointment(new Date(), "4pm");
+        myDoctor.addAvailableAppointment(new Date(), "10am");
+        myDoctor.addAvailableAppointment(new Date(), "1pm");
         //myDoctor.setName("Dr. Gonzalez");
         myDoctor.showName();
+        System.out.println("All of the addAvailable Appointment are: ");
+        for (Doctor.AvailableAppointment item:myDoctor.getAvailableAppointment()) {
+            System.out.println("Have an Available appointment in: "+item.getDate()+ " at: "+item.getTime());
+        }
 
+        System.out.println("------------EXAMPLES AND TESTS---------------");
         Doctor doctores[] = new Doctor[10];
         showMenu();
         System.out.println("Hello world!");
@@ -65,6 +76,9 @@ public class Main {
         for (Object item:arrayObjects2) {
             System.out.println(item);
         }
+
+
+
 
 
     }

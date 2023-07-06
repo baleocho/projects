@@ -2,16 +2,19 @@ package org.example;
 
 import com.sun.source.doctree.DocTree;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 public class Doctor {
-    private int id;
+    private static int id = 0;
     private String name, speciality;
 
     Doctor(){}
 
     Doctor(String name, String speciality){
+        id++;
         this.name = name;
         this.speciality = speciality;
-
     }
 
     public void showName(){
@@ -40,5 +43,47 @@ public class Doctor {
 
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
+    }
+
+    ArrayList<AvailableAppointment> availableAppointment = new ArrayList<>();
+    public void addAvailableAppointment(Date date, String time){
+        availableAppointment.add(new AvailableAppointment(date, time));
+    }
+    public ArrayList<AvailableAppointment> getAvailableAppointment(){
+        return this.availableAppointment;
+    }
+
+    public static class AvailableAppointment {
+        private int idAvailableAppointment;
+        private Date date;
+        private String time;
+
+        public AvailableAppointment( Date date, String time) {
+            this.date = date;
+            this.time = time;
+        }
+        public int getIdAvailableAppointment() {
+            return idAvailableAppointment;
+        }
+
+        public void setIdAvailableAppointment(int idAvailableAppointment) {
+            this.idAvailableAppointment = idAvailableAppointment;
+        }
+
+        public Date getDate() {
+            return date;
+        }
+
+        public void setDate(Date date) {
+            this.date = date;
+        }
+
+        public String getTime() {
+            return time;
+        }
+
+        public void setTime(String time) {
+            this.time = time;
+        }
     }
 }
