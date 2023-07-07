@@ -6,7 +6,7 @@ import static org.example.UIMenu.*;
 public class Main {
     public static void main(String[] args) {
         System.out.println("------------CREATING AND USING A DOCTOR OBJECT---------------");
-        Doctor myDoctor = new Doctor("Dr. Gonzalez", "Pediatra");
+        Doctor myDoctor = new Doctor("Dr. Gonzalez", "Pediatra", "dremail@email.com");
         myDoctor.addAvailableAppointment(new Date(), "4pm");
         myDoctor.addAvailableAppointment(new Date(), "10am");
         myDoctor.addAvailableAppointment(new Date(), "1pm");
@@ -67,7 +67,7 @@ public class Main {
             System.out.println(item);
         }
 
-        System.out.println("--------------ARRAY OF OBJECTS WITH PRIMITAVES-------------");
+        System.out.println("--------------ARRAY OF OBJECTS WITH PRIMITIVES-------------");
         Object[] arrayObjects2 = new Object[3];
         arrayObjects[0] ="Hello world";
         arrayObjects[1] = 123;
@@ -76,6 +76,12 @@ public class Main {
         for (Object item:arrayObjects2) {
             System.out.println(item);
         }
+
+        System.out.println("--------------ENUM FROM ENUMEXAMPLES CLASS-------------");
+        System.out.println("This enum have a ordinal num: "+ EnumExamples.Day.FRIDAY.ordinal());
+        System.out.println("Today is: "+ EnumExamples.Day.FRIDAY);
+        System.out.println("Today is on Spanish: "+ EnumExamples.Day.FRIDAY.getSpanish());
+        System.out.println("Today is on English: "+ EnumExamples.Day.FRIDAY.getEnglish());
 
 
 

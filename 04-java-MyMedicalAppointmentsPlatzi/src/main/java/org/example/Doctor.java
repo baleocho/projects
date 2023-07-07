@@ -1,41 +1,29 @@
 package org.example;
 
-import com.sun.source.doctree.DocTree;
-
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
-    private static int id = 0;
-    private String name, speciality;
+public class Doctor extends User {
+    private static int doctorCounter = 0;
+    private String speciality;
 
-    Doctor(){}
 
-    Doctor(String name, String speciality){
-        id++;
-        this.name = name;
+
+    Doctor(){
+        super();
+        doctorCounter++;
+    }
+
+    Doctor(String name, String speciality, String email){
+        super(name, email);
+        doctorCounter++;
         this.speciality = speciality;
     }
 
     public void showName(){
-        System.out.println("The Doctor name is: "+ this.name);
+        System.out.println("The Doctor name is: "+ super.getName());
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getSpeciality() {
         return speciality;
@@ -85,5 +73,8 @@ public class Doctor {
         public void setTime(String time) {
             this.time = time;
         }
+
+
+
     }
 }
