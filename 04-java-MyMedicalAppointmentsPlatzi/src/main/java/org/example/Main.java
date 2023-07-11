@@ -28,6 +28,7 @@ public class Main {
         patient.setWeight(78.5);
         patient.setPhoneNumber("123456789");
         patient.getPhoneNumber();
+
         System.out.println(patient.getWeight());
 
 
@@ -84,7 +85,11 @@ public class Main {
         System.out.println("Today is on English: "+ EnumExamples.Day.FRIDAY.getEnglish());
 
 
+        System.out.println("-------------TO STRING METHOD OVERRIEDED-------------");
+        System.out.println(patient);
 
+        System.out.println("");
+        System.out.println(myDoctor);
 
 
     }

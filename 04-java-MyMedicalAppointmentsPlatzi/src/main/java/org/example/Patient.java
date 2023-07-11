@@ -27,4 +27,8 @@ public class Patient extends User {
         return this.blood;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + " - Aditional info of patient - Weight:"+ getWeight() + " Height:" + getHeight();
+    }
 }
