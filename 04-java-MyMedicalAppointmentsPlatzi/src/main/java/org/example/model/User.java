@@ -1,6 +1,6 @@
-package org.example;
+package org.example.model;
 
-public class User {
+public abstract class User {
     private int id;
     private String name,email,address,phoneNumber, birthday;
 
@@ -66,4 +66,6 @@ public class User {
     public String toString(){
         return "User: "+name+", Email: "+email+" Address:"+address;
     }
+
+    public abstract void showDataUser();
 }

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,19 +7,21 @@ public class Doctor extends User {
     private static int doctorCounter = 0;
     private String speciality;
 
-
-
-    Doctor(){
+    public Doctor(){
         super();
         doctorCounter++;
     }
 
-    Doctor(String name, String speciality, String email){
+    public Doctor(String name, String speciality, String email){
         super(name, email);
         doctorCounter++;
         this.speciality = speciality;
     }
 
+    public Doctor(String name, String email){
+        super(name, email);
+        doctorCounter++;
+    }
     public void showName(){
         System.out.println("The Doctor name is: "+ super.getName());
     }
@@ -45,6 +47,15 @@ public class Doctor extends User {
     public String toString() {
         return super.toString() + " Speciality:"+speciality + " Available Appointment: "+availableAppointment.toString();
     }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado");
+        System.out.println("Hospital: 34");
+        System.out.println("Department: 12");
+    }
+
+
 
     public static class AvailableAppointment {
         private int idAvailableAppointment;
@@ -84,4 +95,5 @@ public class Doctor extends User {
             return " Available at Date: "+date+ " Time:"+time;
         }
     }
+
 }

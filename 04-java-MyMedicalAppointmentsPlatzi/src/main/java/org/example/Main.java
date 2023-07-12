@@ -1,7 +1,10 @@
 package org.example;
+import org.example.model.*;
+import org.example.ui.UIMenu;
+
 import java.util.Date;
 
-import static org.example.UIMenu.*;
+import static org.example.ui.UIMenu.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -91,6 +94,43 @@ public class Main {
         System.out.println("");
         System.out.println(myDoctor);
 
+        System.out.println("-------------ABSTRACT METHODS-------------");
+        User doctorAbst = new Doctor("Dr. Gonzalez Abstracto", "Pediatra", "dremailabst@email.com");
+        User nurseAbst = new Nurse("Anahi abstracta", "anahiabst@gmail.com");
+        User patientAbst = new Patient("Paciente Abstracto", "abstractpatioent@gmail.com");
+
+        doctorAbst.showDataUser();
+        System.out.println("");
+        nurseAbst.showDataUser();
+        System.out.println("");
+        patientAbst.showDataUser();
+
+        AppointmentDoctor appointmentDoctor = new AppointmentDoctor();
+        appointmentDoctor.printByDefault();
+
+
+        System.out.println("-------------ANONYMOUS CLASSES-------------");
+        User userAnon = new User("Anonymous User", "anouemail@gmail.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Empleado");
+                System.out.println("Hospital: 34");
+                System.out.println("Showing Anonymous Information");
+            }
+        };
+        userAnon.showDataUser();
+
+
+        ISchedulable ischedulable = new ISchedulable() {
+            @Override
+            public void schedule(Date date, String time) {
+                System.out.println();
+            }
+        };
+
+
+        System.out.println("\n\n\n-------------UI MENU-------------");
+        UIMenu.showMenu();
 
     }
 }

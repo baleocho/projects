@@ -1,10 +1,10 @@
-package org.example;
+package org.example.model;
 
 public class Patient extends User {
     private String blood;
     private double weight, height;
 
-    Patient(String name, String email){
+    public Patient(String name, String email){
         super(name, email);
     }
 
@@ -30,5 +30,11 @@ public class Patient extends User {
     @Override
     public String toString() {
         return super.toString() + " - Aditional info of patient - Weight:"+ getWeight() + " Height:" + getHeight();
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Patient");
+        System.out.println("Name: "+this.getName());
     }
 }
