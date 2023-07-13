@@ -16,7 +16,7 @@ public class Main {
         //myDoctor.setName("Dr. Gonzalez");
         myDoctor.showName();
         System.out.println("All of the addAvailable Appointment are: ");
-        for (Doctor.AvailableAppointment item:myDoctor.getAvailableAppointment()) {
+        for (Doctor.AvailableAppointment item:myDoctor.getAvailableAppointments()) {
             System.out.println("Have an Available appointment in: "+item.getDate()+ " at: "+item.getTime());
         }
 

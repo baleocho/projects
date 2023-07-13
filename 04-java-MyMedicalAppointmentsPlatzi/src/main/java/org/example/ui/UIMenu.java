@@ -2,13 +2,14 @@ package org.example.ui;
 
 import org.example.model.Doctor;
 import org.example.model.Patient;
+import org.example.model.User;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UIMenu {
-
-    static Object userLogged;
+    public static final String[] MONTHS = {"Enero", "Febrero","Marzo", "Abril"};
+    static User userLogged;
     public static void showMenu(){
         System.out.println("This is the menu");
         int option = 1;
@@ -26,6 +27,7 @@ public class UIMenu {
                     System.out.println("Welcome Doctor");
                     option = 0;
                     authUser(1);
+
                     break;
                 case 2:
                     System.out.println("Welcome Patient");
@@ -52,7 +54,7 @@ public class UIMenu {
     }
     private static void authUser(int userType){
         ArrayList<Doctor> doctors = new ArrayList<>();
-        doctors.add(new Doctor("Generic Doctor 1", "docgene1@gmail.com"));
+        doctors.add(new Doctor("Generic Doctor 1", "doctor"));
         doctors.add(new Doctor("Generic Doctor 2", "docgene2@gmail.com"));
         doctors.add(new Doctor("Generic Doctor 3", "docgene3@gmail.com"));
 
@@ -73,7 +75,7 @@ public class UIMenu {
                         emailRight = true;
                         System.out.println("Logged succesfully");
                         userLogged = d;
-                        showDoctorMenu();
+                        UIDoctor.showDoctorMenu(d);
                     }
                 }
             }
