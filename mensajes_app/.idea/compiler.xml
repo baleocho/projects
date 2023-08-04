@@ -9,5 +9,8 @@
         <module name="mensajes_app" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mensajes_app" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

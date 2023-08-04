@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d79707e3-ea40-43e5-adbb-8757483c03bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Conexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-react-buscador-peliculas/src/TodoAppFuntional.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../01-react-buscador-peliculas/src/TodoAppFuntional.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="d79707e3-ea40-43e5-adbb-8757483c03bb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +33,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "java-object-oriented",
+    "git-widget-placeholder": "mensajes__app",
     "jdk.selected.JAVA_MODULE": "11",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
