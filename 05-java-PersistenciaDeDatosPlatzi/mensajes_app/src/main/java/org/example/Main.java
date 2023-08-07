@@ -1,11 +1,11 @@
 package org.example;
 
 import java.sql.Connection;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!");
         Conexion conexion = new Conexion();
         try{
             Connection cnx = conexion.getConection();
@@ -13,6 +13,7 @@ public class Main {
         }catch (Exception error){
             System.out.println("Main,Error: "+error);
         }
+        UIGeneral.getUI();
     }
 
 

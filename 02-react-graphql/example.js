@@ -23,3 +23,9 @@ class MyClass{
 const newObject = new MyClass('123')
 
 newObject.number
+
+const COmponent = () => {
+    const [value, setValue] = useState(0)
+     const foo = () => {}
+    return <button onClick={() => setValue(value => value + 1}>button</button>
+}
