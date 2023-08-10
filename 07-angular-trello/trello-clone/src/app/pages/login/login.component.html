@@ -1,0 +1,98 @@
+<div class="w-auto h-auto sm:bg-gray-50 relative pb-6">
+    <div class="md:block hidden absolute w-full h-full">
+        <img class="absolute w-1/4 left-0 bottom-0" src="../../../assets/svg/login-bg-left.svg" alt="bg left">
+        <img class="absolute w-1/4 right-0 bottom-0" src="../../../assets/svg/login-bg-rigth.svg" alt="bg right">
+    </div>
+    <div class="relative m-auto w-10/12 sm:w-10/12 md:w-4/12">
+        <header class="pt-6 flex justify-center">
+            <img class="w-52" src="../../../assets/images/logo/logo-gradient-blue-trello.png" alt="logo">
+        </header>
+        <div class="bg-white rounded sm:shadow py-6 px-6">
+            <div class="mb-4">
+                <h1 class="text-center font-semibold py-8">Log in to Trello</h1>
+                <form novalidate class="space-y-4">
+                    <div class="relative">
+                        <input placeholder="Enter email" class="w-full rounded bg-gray-100 border-2 border-gray-300"
+                            type="email">
+                    </div>
+                    <div class="relative">
+                        <input placeholder="Enter password" class="w-full rounded bg-gray-100 border-2 border-gray-300"
+                            type="password">
+                    </div>
+                    <div>
+                        <app-btn [typeBtn]="'submit'">
+                            Log in
+                        </app-btn>
+                    </div>
+                    <div class="relative">
+                        <div class="text-center text-gray-400 text-sm">OR</div>
+                    </div>
+                    <div class="relative">
+                        <button
+                            class="w-full font-medium rounded text-sm shadow py-3 px-5 flex align-middle justify-center"
+                            type="submit"><img class="w-5 h-5 self-center mr-2"
+                                src="../../../assets/images/logo/icon-gradient-blue-trello.png"
+                                alt="icon google">Continue with Google</button>
+                    </div>
+                    <div class="relative">
+                        <button
+                            class="w-full font-medium rounded text-sm shadow py-3 px-5 flex align-middle justify-center"
+                            type="submit"><img class="w-5 h-5 self-center mr-2"
+                                src="../../../assets/images/logo/icon-gradient-blue-trello.png"
+                                alt="icon google">Continue with Microsoft</button>
+                    </div>
+                    <div class="relative">
+                        <button
+                            class="w-full font-medium rounded text-sm shadow py-3 px-5 flex align-middle justify-center"
+                            type="submit"><img class="w-5 h-5 self-center mr-2"
+                                src="../../../assets/images/logo/icon-gradient-blue-trello.png"
+                                alt="icon google">Continue with Apple</button>
+                    </div>
+                    <div class="relative">
+                        <hr class="bg-slate-500 my-7">
+                    </div>
+                    <div class="relative">
+                        <div class="flex justify-center align-middle text-xs">
+                            <a class="text-blue-600 pr-3">Can't log in?</a>
+                            -
+                            <a class="text-blue-600 pl-3">Sign up for account</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="relative pt-3">
+            <div class="flex justify-center align-middle text-xs">
+                <a class="text-blue-600 pr-3">Privacy Polity</a>
+                -
+                <a class="text-blue-600 pl-3">Term of Service</a>
+            </div>
+        </div>
+        <div class="relative flex justify-center mt-9">
+            <select class="bg-gray-50 border-0 shadow border-gray-300 w-40 text-sm" name="lang" id="lang">
+                <option value="english">English (US)</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+              </select>
+        </div>
+        <div class="relative">
+            <hr class="bg-slate-500 my-10">
+        </div>
+        <div class="relative flex justify-center align-middle">
+            <img class="w-28 h-auto mb-10" src="../../../assets/images/logo/logo-atlassian-gray.png" alt="atlassian logo">
+        </div>
+        <div class="relative">
+            <p class="flex flex-wrap justify-center align-middle w-full flex-row space-x-4 text-xs text-gray-400">
+                <a href="www.google.com">Templates</a>
+                <a href="www.google.com">Pricing</a>
+                <a href="www.google.com">Apps</a>
+                <a href="www.google.com">Jobs</a>
+                <a href="www.google.com">Blog</a>
+                <a href="www.google.com">Developers</a>
+                <a href="www.google.com">About</a>
+                <a href="www.google.com">Help</a>
+
+            </p>
+        </div>
+    </div>
+</div>
