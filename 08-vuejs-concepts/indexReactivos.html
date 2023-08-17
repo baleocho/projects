@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS Concepts</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+
+    </div>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    text: "Hola mundo reactivo",
+                }
+            },
+            methods: {
+                input(e) {
+                    this.text = e.target.value
+                }
+            },
+            template: `
+                    <p v-text="text"></p>
+                    <input 
+                        type="text" 
+                        v-on:input="input"
+                        v-bind:value="text"    
+                    />
+                `
+        }).mount("#app")
+    </script>
+</body>
+
+</html>

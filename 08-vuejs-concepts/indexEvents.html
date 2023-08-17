@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS Concepts</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+       
+    </div>
+    <script>
+        Vue.createApp({
+            data(){
+                return {
+                    counter:0,
+                    buttonAttr:{
+                        style: 'width:5rem;height:5rem; background:grey; color:white;font-size:2rem; "',
+                        type:"button"
+                    }
+                }
+            },
+            methods: {
+                handlerIncremet(){
+                    this.counter++
+                },
+                handlerDecrement(){
+                    this.counter--
+                },
+                handlerReset(){
+                    this.counter=0
+                }
+
+            },
+            template: `
+                    <button v-bind="buttonAttr" v-on:click="handlerIncremet">+</button>
+                    <button v-bind="buttonAttr" v-on:click="handlerDecrement">-</button>
+                    <button v-bind="buttonAttr" v-on:click="handlerReset">Reset</button>
+                    <span v-bind="buttonAttr" v-text="counter"></span>
+
+                `
+        }).mount("#app")
+    </script>
+</body>
+</html>

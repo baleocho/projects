@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS Concepts</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+       
+    </div>
+    <script>
+        Vue.createApp({
+            data(){
+                return {
+                    img:"https://w7.pngwing.com/pngs/388/487/png-transparent-computer-icons-graphy-img-landscape-graphy-icon-miscellaneous-angle-text.png",
+                    imgAlt: "img example"
+                }
+            },
+            template: `
+                    <img v-bind:src="img" :alt="imgAlt"/>
+                `
+        }).mount("#app")
+    </script>
+</body>
+</html>

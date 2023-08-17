@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS Concepts</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+
+    </div>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    firstName: "<span style='color:blue;'>Brian </span>",
+                    lastName: "<span style='color:green;'>Ochoa</span>",
+                    now: new Date()
+                }
+            },
+            methods: {
+                input(e) {
+                    this.text = e.target.value
+                }
+            },
+            computed: {
+                fullName(){
+                    return this.firstName+" "+this.lastName
+                }
+            },
+            template: `
+                    <h1 v-html="fullName"></h1>
+                    <h4>{{now.toLocaleDateString()}}</h4>
+                `
+        }).mount("#app")
+    </script>
+</body>
+
+</html>
