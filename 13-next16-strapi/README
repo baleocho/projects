@@ -1,0 +1,25 @@
+# Next.js 16 + Strapi Project
+## 📺 Tutorial Source
+
+This project is based on the YouTube tutorial: [Next.js 16 + Strapi 5 Tutorial](https://www.youtube.com/watch?v=VosHdPQr6nI)
+
+A modern web application built with Next.js 16 and Strapi CMS.
+
+## Features
+
+- **Next.js 16**: Latest React framework with App Router
+- **Strapi CMS**: Headless content management system
+- **TypeScript**: Type-safe development
+- **Responsive Design**: Mobile-first approach
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+- PostgreSQL/MySQL (for Strapi)
+
+### Installation
+
+1. Clone the repository
